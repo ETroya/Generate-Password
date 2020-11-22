@@ -2,15 +2,16 @@
 
 //Array
 var generateBtn = document.querySelector("#generate");
-var upper =[ "A", "B", "C", "D", "E", "F"];
-var lower= ["a", "b", "c","d","e", "f"];
-var numbers= ["1", "2", "3", "4", "5"];
-var spec= ["'", "!", '#','$',"&","'"];
+var upper =["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+var lower= ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p",
+"q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+var numbers= ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
+var spec= ["+", "-", "&&", "@", "!", "(", ")", "{", "}", "[", "]", "^",
+"~", "*", "?", ":" ];
 
 
 //Prompt Box//
 // prompt("How many characteristics would you like?" )
-
 // Generate Password//
 function generatePassword(){
 
@@ -74,31 +75,4 @@ function writePassword() {
   passwordText.value = password;
 }
 
-//
-// if(lowerboo){
-// for (let i = 0; i < length; i++) {
-// var random = Math.floor(Math.random()*lower.length);
-// passwordarray.push (lower[random])    
-// }
-// }
-
-// if(specboo){
-// for (let i = 0; i < length; i++) {
-// var random = Math.floor(Math.random()*spec.length);
-// passwordarray.push (spec[random]) 
-// }
-// }
-
-// if(numberboo){
-// for (let i = 0; i < length; i++) {
-//   var random = Math.floor(Math.random()*numbers.length);
-//   passwordarray.push (numbers[random]) 
-//   }
-// }
-
-// return passwordarray.join("")
-// }
-// console.log(lower[3])
-
-// Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
