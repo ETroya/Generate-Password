@@ -8,7 +8,7 @@ var lower= ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n"
 var numbers= ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
 var spec= ["+", "-", "&&", "@", "!", "(", ")", "{", "}", "[", "]", "^",
 "~", "*", "?", ":" ];
-
+var pass= document.querySelector("#password")
 
 //Prompt Box//
 // prompt("How many characteristics would you like?" )
@@ -63,9 +63,9 @@ for (let i = 0; i < userLength; i++)
   console.log(passwordchoices[random])  
 }
 
-
+// pass.innerHTML= "";
   // console.log(passwordarray);
-  return passwordarray;
+  return passwordarray.join([]);
 }
 // Write password to the #password input
 function writePassword() {
